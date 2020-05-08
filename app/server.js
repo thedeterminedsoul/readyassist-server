@@ -6,6 +6,11 @@ app.get('/', (req, res) => {
     res.send('<h1>Hello world</h1>');
 });
 
+app.get('/students', (req, res) => {
+   res.send('<h1>Hello students!</h1>');
+});
+
+
 app.listen(port, () => {
     console.log("🚀 Started server...")
 });
