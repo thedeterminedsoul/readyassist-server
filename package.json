@@ -1,0 +1,22 @@
+{
+  "name": "readyassist-server",
+  "version": "1.0.0",
+  "description": "This is my server implementation",
+  "main": "index.js",
+  "scripts": {
+    "run": "node app/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thedeterminedsoul/readyassist-server.git"
+  },
+  "author": "Pawan Tejwani",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thedeterminedsoul/readyassist-server/issues"
+  },
+  "homepage": "https://github.com/thedeterminedsoul/readyassist-server#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
