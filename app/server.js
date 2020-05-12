@@ -23,7 +23,14 @@ app.get('/students', (req, res) => {
 
 app.get('/candidates', (req, res) => {
     // in response I want to reply with all the candidate information
-    let sql = 'select * from candidates;';
+    let sql = 'select * from candidates';
+    
+    if(req.query.id) {
+        sql = sql + ' where id = ' + req.query.id;
+
+        // select * from candidates where id = 1
+    }
+    
     connection.query(sql, function(err, data, fields){
         if(err) {
             res.status(500);
