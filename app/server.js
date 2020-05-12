@@ -7,7 +7,7 @@ var mysql = require('mysql')
 var conInfo = {
     host: "localhost",
     port: 3306,
-    user: "root",
+    user: "root1",
     password: "",
     database: "readyassist"
 }
@@ -34,7 +34,10 @@ app.get('/candidates', (req, res) => {
     connection.query(sql, function(err, data, fields){
         if(err) {
             res.status(500);
-            res.send(err);
+            let errMsg = {
+                error: err
+            };
+            res.send(errMsg);
         }
         let responseObject = {
             data: data
