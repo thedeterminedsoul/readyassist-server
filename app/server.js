@@ -7,10 +7,11 @@ var mysql = require('mysql')
 var conInfo = {
     host: "localhost",
     port: 3306,
-    user: "root1",
+    user: "root",
     password: "",
     database: "readyassist"
 }
+
 var connection = mysql.createConnection(conInfo);
 
 app.get('/', (req, res) => {
